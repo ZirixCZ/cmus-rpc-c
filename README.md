@@ -10,6 +10,9 @@ git clone https://github.com/ZirixCZ/cmus-rpc-c && cd cmus-rpc-c
 # On aarch64
 gcc main.c -o cmus_rpc_c -I. ./lib/aarch64/discord_game_sdk.dylib -Wl,-rpath,@loader_path/lib/aarch64
 
+# On x86_64
+gcc main.c -o cmus_rpc_c -I. ./lib/x86_64/discord_game_sdk.so -Wl,-rpath,@loader_path/lib/x86_64
+
 # Discord game SDK versions for other architectures are provided in the lib folder
 ```
 
